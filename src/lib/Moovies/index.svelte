@@ -17,7 +17,8 @@
     .moovies {
         position: relative;
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        padding: 10vh 0;
         background: linear-gradient(180deg, #2F2E41 0%, #2F2E41 0.01%, #66648C 100%);
 
         &--list {

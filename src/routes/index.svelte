@@ -4,6 +4,8 @@
 	import Home from '$lib/Home/index.svelte';
 	import Moovies from '$lib/Moovies/index.svelte';
 	import Informations from '$lib/Informations/index.svelte';
+	import Booking from '$lib/Booking/index.svelte';
+	import Contact from '$lib/Contact/index.svelte';
 </script>
 
 <svelte:head>
@@ -16,6 +18,8 @@
 	<Home />
 	<Moovies />
 	<Informations />
+	<Booking />
+	<Contact />
 </main>
 
 <style>

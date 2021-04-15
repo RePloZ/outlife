@@ -26,6 +26,8 @@
   },
   "type": "module",
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.11.3",
+    "googleapis": "^71.0.0",
     "node-sass": "^5.0.0"
   }
 }
