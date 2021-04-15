@@ -1,26 +1,33 @@
 <script lang="ts">
-    import { HeaderPosition } from "./type";
+    import { HeaderPosition } from "../type";
 
     export let selectedPosition : HeaderPosition = HeaderPosition.Home
 
     const headerPositions = Object.values(HeaderPosition).filter(position => ![HeaderPosition.Home, HeaderPosition.Contact].includes(position))
+    $: isInside = headerPositions.includes(selectedPosition)
 </script>
 
 
 <div class="header">
-    <p class="header--text">Outside Moovie</p>
+    <a href={['#', HeaderPosition.Home].join('')} class="header--text">Outside Moovie</a>
     <div class="header--bloc header--bloc__space">
         {#each headerPositions as position}
         <div class="header--box">
-            {#if selectedPosition === position }
-                <p class="header--text header--text__activate">{position}</p>
-            {:else}
-                <p class="header--text">{position}</p>
-            {/if}
+                <a
+                href={['#', position].join('')}
+                class={
+                    [
+                        "header--text",
+                        isInside ? "header--text-active" : "",
+                        selectedPosition === position
+                        ? "header--text__selected"
+                        : "",
+                    ].join(' ')
+                }>{position}</a>
         </div>
         {/each}
     </div>
-    <p class="header--text">Contact</p>
+    <a  href={['#', HeaderPosition.Contact].join('')} class="header--text">Contact</a>
 </div>
 
 <style lang="scss">
@@ -39,7 +46,16 @@
         justify-content: space-between;
 
         &--text {
-            padding: 0 2rem;
+            color: hsl(0, 0%, 15%);
+            text-decoration: none;
+            padding: 1rem;
+
+            &:hover {
+                background: hsl(243, 40%, 48%);
+                color:white;
+                text-decoration:none;
+                cursor:pointer;
+            }
 
             &__activate {
                 border-bottom: 0.5rem white;
@@ -52,7 +68,6 @@
             &__space {
                 justify-content: space-around;
             }
-
         }
 
         &--box {

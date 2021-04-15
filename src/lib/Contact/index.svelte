@@ -1,5 +1,9 @@
-<div class="contact">
-    <h3>Se renseigner</h3>
+<script lang="ts">
+    import { HeaderPosition } from "../type";
+</script>
+
+<div id={HeaderPosition.Contact} class="contact">
+    <h3>SE RENSEIGNER</h3>
     <div class="contact--bloc">
         <div>
             <p>Latest News :</p>

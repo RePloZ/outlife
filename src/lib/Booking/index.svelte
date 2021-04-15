@@ -1,10 +1,12 @@
 <script lang="ts">
+    import { HeaderPosition } from "../type";
+
     const handleClick = (event) => {
         event.preventDefault();
     }
 </script>
 
-<div class="booking">
+<div id={HeaderPosition.Reservation} class="booking">
     <div class="booking--box">
         <div class="booking--text">
             <h3>Book your place</h3>

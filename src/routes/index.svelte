@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { HeaderPosition } from '$lib/type';
 	import Header from '$lib/Header/index.svelte';
-	import { HeaderPosition } from '$lib/Header/type';
 	import Home from '$lib/Home/index.svelte';
 	import Moovies from '$lib/Moovies/index.svelte';
 	import Informations from '$lib/Informations/index.svelte';

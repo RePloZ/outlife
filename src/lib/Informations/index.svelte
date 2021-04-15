@@ -1,10 +1,14 @@
-<div class="informations">
-    <h2>Information</h2>
+<script lang="ts">
+    import { HeaderPosition } from "../type";
+</script>
+
+<div id={HeaderPosition.Informations} class="informations">
+    <h2>INFORMATION</h2>
     <div class="informations--circle informations--circle__first">
         <h3>
             5 - 8
             <br>
-            August 
+            August
         </h3>
     </div>
     <iframe

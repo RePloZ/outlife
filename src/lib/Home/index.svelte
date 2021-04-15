@@ -2,7 +2,7 @@
     import Moon from './moon.svelte';
 </script>
 
-<div class="home">
+<div id="home" class="home">
     <div class="home--text">
         <p>
             Boston.<br>
