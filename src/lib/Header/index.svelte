@@ -9,7 +9,7 @@
 
 
 <div class="header">
-    <a href={['#', HeaderPosition.Home].join('')} class="header--text">Outside Moovie</a>
+    <a href={['#', HeaderPosition.Home].join('')} class="header--text">Watch It Oustide</a>
     <div class="header--bloc header--bloc__space">
         {#each headerPositions as position}
         <div class="header--box">
