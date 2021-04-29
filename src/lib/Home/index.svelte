@@ -31,7 +31,7 @@
             top: 10%;
             left: 10%;
 
-            font-size: 36px;
+            font-size: 3rem;
             line-height: 49px;
         }
 

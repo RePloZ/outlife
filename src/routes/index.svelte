@@ -2,6 +2,7 @@
 	import { HeaderPosition } from '$lib/type';
 	import Header from '$lib/Header/index.svelte';
 	import Home from '$lib/Home/index.svelte';
+	import About from '$lib/About/index.svelte';
 	import Moovies from '$lib/Moovies/index.svelte';
 	import Informations from '$lib/Informations/index.svelte';
 	import Booking from '$lib/Booking/index.svelte';
@@ -16,6 +17,7 @@
 <Header selectedPosition={HeaderPosition.Home} />
 <main>
 	<Home />
+	<About />
 	<Moovies />
 	<Informations />
 	<Booking />
@@ -29,7 +31,6 @@
 		overflow: hidden;
 		top: 54px;
 	}
-
 	body {
 		padding: 0;
 		margin: 0;

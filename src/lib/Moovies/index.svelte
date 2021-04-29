@@ -70,7 +70,7 @@
 
             color: white;
             text-align: center;
-            font-size: 36px;
+            font-size: 3rem;
         }
     }
 </style>

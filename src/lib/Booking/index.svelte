@@ -45,6 +45,15 @@
             margin: 2rem;
         }
     }
+    @media only screen and (max-width: 600px) {
+        .inline {
+            flex-direction: column;
+            flex-basis: 0;
+            input:first-child {
+                margin-bottom: 0;
+            }
+        }
+	}
 
     .booking {
         display: grid;

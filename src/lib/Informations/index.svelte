@@ -8,7 +8,7 @@
         <h3>
             5 - 8
             <br>
-            August
+            AUGUST
         </h3>
     </div>
     <iframe
@@ -18,7 +18,7 @@
     allowfullscreen
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.4536004978845!2d-71.07262194821601!3d42.35417144336258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709e822b60bb%3A0xcbd77f0b5e16e701!2sPublic%20Garden!5e0!3m2!1sfr!2sfr!4v1618483182295!5m2!1sfr!2sfr"></iframe>
     <div class="informations--circle informations--circle__third">
-        <h3>1,500 people</h3>
+        <h3>1,500 PEOPLE</h3>
     </div>
 </div>
 
@@ -39,7 +39,7 @@
             top: 20vmin;
             left: 50%;
             transform: translateX(-50%);
-            width: 75%;
+            width: 75vw;
             height: 30vmin;
         }
 
@@ -54,17 +54,17 @@
 
             &__first {
                 bottom: 10vmin;
-                left: 10vmin;
+                left: 20vmin;
             }
             &__third {
                 bottom: 10vmin;
-                right: 10vmin;
+                right: 20vmin;
             }
 
             width: 30vmin;
             height: 30vmin;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
+            background: #e5e5e5;
         }
     }
 </style>
