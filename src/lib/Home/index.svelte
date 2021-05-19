@@ -19,6 +19,11 @@
 </div>
 
 <style lang="scss">
+    @media only screen and (max-width: 600px) {
+        .home--text {
+            text-align: center;
+        }
+    }
     .home {
         position: relative;
         background: #2F2E41;

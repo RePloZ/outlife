@@ -30,7 +30,7 @@
             padding: 2rem;
         }
         position: relative;
-        width: 100vw;
+        width: calc(100vw - 2rem);
         min-height: 100vmin;
         background: #66648C;
 

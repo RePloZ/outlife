@@ -19,7 +19,7 @@
         </div>
         <div>
             <p>Our social networks</p>
-            <div class="contact--bloc">
+            <div class="contact--line">
                 <a href="https://twitter.com/">
                     <img class="contact--icon" src="https://img.icons8.com/android/24/000000/twitter.png"/>
                 </a>
@@ -45,10 +45,24 @@
             color: black;
         }
 
+        &--line {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
         &--bloc {
             display: flex;
             justify-content: space-evenly;
             width: 100%;
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            div {
+                text-align: center;
+            }
+
         }
 
         &--icon {
